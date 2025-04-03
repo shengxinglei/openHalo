@@ -75,6 +75,15 @@ psql -p 5432
 # CREATE EXTENSION aux_mysql CASCADE;
 ```
 
+- CREATE MYSQL USER
+```sql
+psql
+halo0root=# set password_encryption='mysql_native_password';
+SET
+halo0root=# CREATE USER mysqltest SUPERUSER PASSWORD '123456';
+CREATE ROLE
+```
+
 - Query Database using mysql CLI
 ```sh
 mysql -P 3306 -h 127.0.0.1 
